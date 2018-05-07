@@ -1,14 +1,63 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <title>I, Bad Robot</title>
-    <script>
-      if (new Date().getTime() < new Date('April 23, 2018 19:00:00 GMT+02:00'))
-        window.location.replace("https://ibadrobot.github.io/landing.html");
-      else
-        window.location.replace("https://ibadrobot.github.io/episode_first.html");
-    </script> 
-  </head>
-  <body>
-  </body>
-</html>
 
+    <style>
+
+        .page_container {
+            position: relative;
+            left: 12.5%;
+            top: 35%;
+        }
+
+        .page_container h1 {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            left: 17.5%;
+            margin-top: 50px;
+            margin-bottom: 150px;
+            position: relative;
+        }
+
+        .image_container {
+            float: left;
+        }
+
+        .episode_one {
+            border-style: solid;
+            border-width: 0px 5px 5px 0px;
+            border-color: black;
+            width: 65%;
+        }
+
+        .episode_two {
+            border-style: solid;
+            border-width: 0px 0px 5px 5px;
+            border-color: black;
+            width: 65%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page_container">
+        <h1>
+            Please, select a virtual story to be told...
+        </h1>
+        <div class="image_container">
+            <a href="https://ibadrobot.github.io/episode_first.html">
+                <img class="episode_one" src="IBadRobot_Logo_Only_1.jpg" />
+            </a>
+        </div>
+        <div class="image_container">
+            <a href="https://ibadrobot.github.io/landing.html">
+                <img class="episode_two" src="IBadRobot_Logo_Only_Episode_Two_1.gif" />
+            </a>
+        </div>
+        <div style="clear: both;"></div>
+
+    </div>
+
+</body>
+</html>
